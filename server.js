@@ -12,4 +12,15 @@ mongoose.connect('mongodb://127.0.0.1:27017/user-manager', { useUnifiedTopology:
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.listen(3000, () => console.log("Servidor começou na porta 3000..."))
+
+const UserControl = require('./controllers/userControl');
+
+app.post('/api/user/create', UserControl.create);
+app.post('/api/user/update', UserControl.update);
+app.get('/api/user/retrieve', UserControl.retrieve);
+app.delete('/api/user/delete', UserControl.delete);
+
+
+app.listen(3000, () => console.log("Servidor começou na porta 3000..."));
+
+

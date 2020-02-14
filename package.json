@@ -1,18 +1,26 @@
 {
-    "name": "apicrud",
-    "version": "1.0.0",
-    "description": "Estudo de API CRUD em Node, usando Express e Mongoose",
-    "main": "server.js",
-    "scripts": {
-        "start": "nodemon server.js"
-    },
-    "author": "Júlia Zapata",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.17.1",
-        "mongoose": "^5.8.13"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.2"
-    }
+  "name": "apicrud",
+  "version": "1.0.0",
+  "description": "Estudo de API CRUD em Node, usando Express e Mongoose",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Júlia Zapata",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juzapata/apiRestCrud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juzapata/apiRestCrud/issues"
+  },
+  "homepage": "https://github.com/juzapata/apiRestCrud#readme"
 }
